@@ -22,6 +22,10 @@
 auto-save-list
 tramp
 .\#*
+custom.el
+history
+places
+recentf
 
 # Org-mode
 .org-id-locations
@@ -36,6 +40,7 @@ tramp
 
 # elpa packages
 /elpa/
+/eln-cache/
 
 # reftex files
 *.rel
@@ -55,6 +60,7 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+projectile-bookmarks.eld
 
 # directory configuration
 .dir-locals.el
