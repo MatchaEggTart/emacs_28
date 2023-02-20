@@ -1,4 +1,4 @@
-;;; init-js.el --- the configurations for javascript
+;;; init-javascript.el --- the configurations for javascript
 ;;; Commentary:
 ;;; Code:
 
@@ -15,5 +15,5 @@
   :config
   )
 
-(provide 'init-js)
-;;; init-ui.el ends here
+(provide 'init-javascript)
+;;; init-javascript.el ends here
