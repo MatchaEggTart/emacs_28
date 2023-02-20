@@ -13,7 +13,7 @@
     (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.s?css\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
+    ;; (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.xml\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.info\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.module\\'" . web-mode))
@@ -22,11 +22,11 @@
     (setq web-mode-css-indent-offset 2)
     (setq web-mode-code-indent-offset 2))
   ;; JSX
-  :mode ("/\\(components\\|containers\\|src\\)/.*\\.js[x]?\\'")
+  ;; :mode ("/\\(components\\|containers\\|src\\)/.*\\.js[x]?\\'")
   :config
-  (setq web-mode-content-types-alist
-        '(("jsx" . "/\\(components\\|containers\\|src\\)/.*\\.js[x]?\\'"))
-	)
+  ;; (setq web-mode-content-types-alist
+  ;; '(("jsx" . "/\\(components\\|containers\\|src\\)/.*\\.js[x]?\\'"))
+  ;; )
   (setq web-mode-enable-current-element-highlight t)
   )
 

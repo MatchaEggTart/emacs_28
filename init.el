@@ -24,6 +24,7 @@
 (require 'init-org)
 (require 'init-develop)
 (require 'init-web)
+(require 'init-js)
 (require 'init-eglot)
 ;; (require 'init-awesome-tab)
 

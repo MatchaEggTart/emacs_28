@@ -60,6 +60,16 @@
   ;; :init (load-theme 'modus-vivendi-tinted :no-confim))
   ;; :init (load-theme 'modus-vivendi-deuteranopia :no-confim))
 
+;; 代码更多颜色
+(use-package color-identifiers-mode
+  :commands (color-identifiers-mode
+             global-color-identifiers-mode
+             color-identifiers:refresh)
+  :init
+  (setq color-identifiers:num-colors 10)
+  :hook (prog-mode . color-identifiers-mode)
+  )
+
 ;; mode-line 显示 文件大小
 (use-package simple
   :ensure nil
@@ -110,8 +120,6 @@
   ;;   (mode-line ((t (:height 0.9))))
   ;;   (mode-line-inactive ((t (:height 0.9))))
   )
-
-
 
 ;; 记住指令跟文件，下次使用优先，不过 28好像默认开启了
 (use-package savehist
