@@ -17,6 +17,11 @@
 ;; (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 ;; (setq mouse-wheel-progressive-speed nil)
 
+;; evil-nerd-commenter
+;; 增强注释
+;; (use-package evil-nerd-commenter
+;;   :bind ("C-c C-/" . evilnc-comment-or-uncomment-lines))
+
 ;; crux
 (use-package crux
   :bind(
