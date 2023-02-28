@@ -42,6 +42,9 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 
+;; 默认使用 melpa-stable
+(setq use-package-always-pin "melpa-stable")
+
 ;; 装完插件的重启工具
 (use-package restart-emacs)
 
