@@ -10,12 +10,37 @@
 (setq package-check-signature nil
       load-prefer-newer t)
 
+;; 原镜像
+;; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/") ;; GNU ELPA repository (Offical)
+;;                          ("melpa" . "https://melpa.org/packages/") ;; MELPA repository
+;;                          ("melpa-stable" . "https://stable.melpa.org/packages/") ;; MELPA Stable repository
+;;                          ("org" . "http://orgmode.org/elpa/") ;; Org-mode's repository
+;; 			 ))
+
+;; 清华镜像
 (setq package-archives '(("gnu"    . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("nongnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
-                         ;; ("melpa"  . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
-			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
+                         ("melpa"  . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+			 ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/stable-melpa/")
+			 ))
+
+;; 中科大镜像
+;; (setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
+;;                          ("nongnu" . "http://mirrors.ustc.edu.cn/elpa/nongnu/")
+;;                          ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
+;; 			 ("melpa-stable" . "http://mirrors.ustc.edu.cn/elpa/stable-melpa/")
+;; 			 ))
+
+;; Emacs China
+;; (setq package-archives '(("gnu"   . "http://1.15.88.122/gnu/")
+;;                          ("melpa" . "http://1.15.88.122/melpa/")
+;; 			 ("melpa-stable" . "http://1.15.88.122/stable-melpa/")
+;; 			 ("org" . "http://1.15.88.122/org/")
+;; 			 ))
 
 (package-initialize) ;; You might already have this line
+
+;; (package-refresh-contents) ;; 刷新
 
 ;;防止反复调用 package-refresh-contents 会影响加载速度
 (when (not package-archive-contents)

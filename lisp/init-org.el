@@ -13,7 +13,7 @@
   :ensure t)
 
 (use-package org-contrib
-  ;;  :pin nongnu
+  :pin nongnu
   )
 
 ;; TODO

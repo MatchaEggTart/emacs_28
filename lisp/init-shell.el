@@ -14,6 +14,7 @@
   :init (exec-path-from-shell-initialize))
 
 (use-package vterm
+  :pin melpa
   )
 ;; :ensure t
 ;; :confit (display-line-numbers-mode nil))

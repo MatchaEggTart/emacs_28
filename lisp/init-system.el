@@ -14,6 +14,10 @@
 ;; 文件即时同步刷新
 (global-auto-revert-mode 1) ; 其实默认开启了
 
+;; 避免 Package cl is deprecated
+;; (require 'cl-lib)
+;; (eval-when-compile (require 'cl-lib))
+
 (provide 'init-system)
 
 ;;; init-system.el ends here

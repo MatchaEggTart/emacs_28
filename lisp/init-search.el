@@ -7,6 +7,7 @@
 ;; 新强化搜索 vertico orderless marginalia embark consult
 ;; Enable vertico
 (use-package vertico
+  ;; :pin melpa
   :init
   (vertico-mode)
 
@@ -73,6 +74,25 @@
                  nil
                  (window-parameters (mode-line-format . none)))))
 
+;; sudo dnf install ripgrep first
+(use-package consult
+  ;; :ensure t
+  :bind
+  ("C-s" . consult-line)
+  ;; ("C-x b" . consult-buffer)
+  ("C-c p s" . consult-ripgrep)
+  )
+
+(eval-after-load 'consult
+  (progn
+    (setq
+     consult-narrow-key "<"
+     consult-line-numbers-widen t
+     consult-async-min-input 2
+     consult-async-refresh-delay  0.15
+     consult-async-input-throttle 0.2
+     consult-async-input-debounce 0.1)))
+
 ;; Consult users will also want the embark-consult package.
 (use-package embark-consult
   ;; :ensure t ; only need to install it, embark loads it after consult if found
@@ -115,25 +135,6 @@ Supports exporting consult-grep to wgrep, file to wdeired, and consult-location 
 ;; (progn
 ;; (setq consult-locate-args (encode-coding-string "es.exe -i -p -r" 'gbk))
 ;; (add-to-list 'process-coding-system-alist '("es" gbk . gbk)))
-
-;; sudo dnf install ripgrep first
-(use-package consult
-  ;; :ensure t
-  :bind
-  ("C-s" . consult-line)
-  ;; ("C-x b" . consult-buffer)
-  ("C-c p s" . consult-ripgrep)
-  )
-
-(eval-after-load 'consult
-  (progn
-    (setq
-     consult-narrow-key "<"
-     consult-line-numbers-widen t
-     consult-async-min-input 2
-     consult-async-refresh-delay  0.15
-     consult-async-input-throttle 0.2
-     consult-async-input-debounce 0.1)))
 
 (provide 'init-search)
 
