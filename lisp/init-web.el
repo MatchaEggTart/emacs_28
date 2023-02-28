@@ -32,6 +32,7 @@
 
 ;; html 快捷键，使用 C+j
 (use-package emmet-mode
+  :pin melpa
   :hook
   ((web-mode css-mode js-jsx-mode) . emmet-mode)
   :config
