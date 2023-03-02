@@ -56,9 +56,13 @@
 
 ;; 安装主题
 (use-package modus-themes
+  ;; :init (load-theme 'modus-operandi :no-confim))
   :init (load-theme 'modus-operandi-tinted :no-confim))
+  ;; :init (load-theme 'modus-operandi-deuteranopia :no-confim))
+  ;; :init (load-theme 'modus-vivendi :co-confim))
   ;; :init (load-theme 'modus-vivendi-tinted :no-confim))
   ;; :init (load-theme 'modus-vivendi-deuteranopia :no-confim))
+
 
 ;; 代码更多颜色
 (use-package color-identifiers-mode

@@ -6,7 +6,8 @@
 
 ;; Eglot
 (use-package eglot
-  :hook ((css-mode js-mode web-mode) . eglot-ensure)
+  ;; :hook ((css-mode js-mode web-mode) . eglot-ensure)
+  :hook ((js-mode) . eglot-ensure)
   :config
   ;; (setq eglot-autoshutdown t
   ;;       completion-category-overrides '((eglot (styles orderless))))
