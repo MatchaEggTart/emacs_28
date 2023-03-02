@@ -60,6 +60,7 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+projects
 projectile-bookmarks.eld
 
 # directory configuration
