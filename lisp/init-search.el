@@ -6,6 +6,7 @@
 
 ;; 新强化搜索 vertico orderless marginalia embark consult
 ;; Enable vertico
+;; 要使用原镜像安装，(package-refresh-contents) ;; 刷新
 (use-package vertico
   ;; :pin melpa
   :init

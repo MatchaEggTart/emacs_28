@@ -11,11 +11,11 @@
       load-prefer-newer t)
 
 ;; 原镜像
-;; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/") ;; GNU ELPA repository (Offical)
+;; (;setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/") ;; GNU ELPA repository (Offical)
 ;;                          ("melpa" . "https://melpa.org/packages/") ;; MELPA repository
 ;;                          ("melpa-stable" . "https://stable.melpa.org/packages/") ;; MELPA Stable repository
 ;;                          ("org" . "http://orgmode.org/elpa/") ;; Org-mode's repository
-;; 			 ))
+;;  			 ))
 
 ;; 清华镜像
 (setq package-archives '(("gnu"    . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
@@ -28,15 +28,15 @@
 ;; (setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
 ;;                          ("nongnu" . "http://mirrors.ustc.edu.cn/elpa/nongnu/")
 ;;                          ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
-;; 			 ("melpa-stable" . "http://mirrors.ustc.edu.cn/elpa/stable-melpa/")
-;; 			 ))
+;;  			 ("melpa-stable" . "http://mirrors.ustc.edu.cn/elpa/stable-melpa/")
+;;  			 ))
 
 ;; Emacs China
 ;; (setq package-archives '(("gnu"   . "http://1.15.88.122/gnu/")
 ;;                          ("melpa" . "http://1.15.88.122/melpa/")
-;; 			 ("melpa-stable" . "http://1.15.88.122/stable-melpa/")
-;; 			 ("org" . "http://1.15.88.122/org/")
-;; 			 ))
+;;   			 ("melpa-stable" . "http://1.15.88.122/stable-melpa/")
+;;   			 ("org" . "http://1.15.88.122/org/")
+;;   			 ))
 
 (package-initialize) ;; You might already have this line
 
