@@ -15,6 +15,7 @@
   ;; (add-to-list 'eglot-server-programs '(c-mode . ("clang-query")))
   ;; (advice-add 'eglot-code-action-organize-imports :before #'eglot-format-buffer)
   ;; (add-hook 'eglot-managed-mode-hook (lambda () (add-hook 'before-save-hook #'eglot-format-buffer)))
+  ;; npm install -g typescript-language-server typescript
   (add-to-list 'eglot-server-programs '(js-mode "typescript-language-server" "--stdio"))
   )
 
