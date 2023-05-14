@@ -11,18 +11,21 @@
       load-prefer-newer t)
 
 ;; 原镜像
-;; (;setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/") ;; GNU ELPA repository (Offical)
-;;                          ("melpa" . "https://melpa.org/packages/") ;; MELPA repository
-;;                          ("melpa-stable" . "https://stable.melpa.org/packages/") ;; MELPA Stable repository
-;;                          ("org" . "http://orgmode.org/elpa/") ;; Org-mode's repository
-;;  			 ))
+;; (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/") ;; GNU ELPA repository (Offical)
+;;			    ("melpa" . "https://melpa.org/packages/") ;; MELPA repository
+;;			    ("melpa-stable" . "https://stable.melpa.org/packages/") ;; MELPA Stable repository
+;;			    ("org" . "http://orgmode.org/elpa/") ;; Org-mode's repository
+;;			    ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+;;			      ("gnu-devel" . "https://elpa.gnu.org/devel/")
+;;			 ))
 
 ;; 清华镜像
-(setq package-archives '(("gnu"    . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-                         ("nongnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
-                         ("melpa"  . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+ (setq package-archives '(("gnu"    . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+			 ("nongnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
+			 ("melpa"  . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
 			 ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/stable-melpa/")
-			 ))
+			 ("gnu-devel" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu-devel/")
+		 ))
 
 ;; 中科大镜像
 ;; (setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
@@ -40,7 +43,8 @@
 
 (package-initialize) ;; You might already have this line
 
-;; (package-refresh-contents) ;; 刷新
+;; 刷新
+;; (package-refresh-contents)
 
 ;;防止反复调用 package-refresh-contents 会影响加载速度
 (when (not package-archive-contents)

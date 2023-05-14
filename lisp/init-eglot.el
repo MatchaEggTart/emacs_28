@@ -6,6 +6,8 @@
 
 ;; Eglot
 (use-package eglot
+  ;; 自从入了 29，就需要添加下面那句
+  :pin gnu-devel
   ;; :hook ((css-mode js-mode web-mode) . eglot-ensure)
   :hook ((js-mode) . eglot-ensure)
   :config
@@ -15,7 +17,7 @@
   ;; (add-to-list 'eglot-server-programs '(c-mode . ("clang-query")))
   ;; (advice-add 'eglot-code-action-organize-imports :before #'eglot-format-buffer)
   ;; (add-hook 'eglot-managed-mode-hook (lambda () (add-hook 'before-save-hook #'eglot-format-buffer)))
-  ;; npm install -g typescript-language-server typescript
+  ;; sudo npm install -g typescript-language-server typescript
   (add-to-list 'eglot-server-programs '(js-mode "typescript-language-server" "--stdio"))
   )
 
