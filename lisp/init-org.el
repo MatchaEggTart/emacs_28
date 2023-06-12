@@ -10,7 +10,15 @@
 ;; (assq-delete-all 'org package--builtin-versions)
 
 (use-package org
-  :ensure t)
+  :ensure t
+  :config
+  (progn
+    ;; 自动换行
+    (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+    ;; 手动折行
+    ;; (global-set-key [f12] 'toggle-truncate-lines)
+    )
+  )
 
 (use-package org-contrib
   :pin nongnu

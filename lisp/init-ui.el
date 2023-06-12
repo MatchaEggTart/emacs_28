@@ -48,7 +48,7 @@
   (setq dashboard-center-content t)
   (setq dashboard-projects-backend 'projectile) ;; 读者可以暂时注释掉这一行，等安装了 projectile 后再使用
   (setq dashboard-startup-banner 'official) ;; 也可以自定义图片
-  (setq dashboard-items '((recents  . 5)   ;; 显示多少个最近文件
+  (setq dashboard-items '((recents  . 10)   ;; 显示多少个最近文件
 			  ;; (bookmarks . 5)  ;; 显示多少个最近书签
 			  (projects . 10))) ;; 显示多少个最近项目
   )
